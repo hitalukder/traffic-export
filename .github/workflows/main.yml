@@ -26,6 +26,6 @@ jobs:
       uses: EndBug/add-and-commit@v4
       with:
         author_name: Himadri Talukder
-        message: "GitHub traffic"
+        message: "GitHub traffic update"
         add: "./traffic/*"
         ref: "main"  # commits to branch "traffic" 
