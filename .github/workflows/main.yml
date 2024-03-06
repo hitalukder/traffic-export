@@ -26,6 +26,10 @@ jobs:
       
     - name: Run Python script to generate summary
       run: python3 main.py
+      env:
+        TRAFFIC_ACTION_TOKEN: ${{ secrets.TRAFFIC_ACTION_TOKEN }}
+        TRAFFIC_ACTION_OWNER: ${{ secrets.TRAFFIC_ACTION_OWNER }}
+        TRAFFIC_ACTION_REPO: ${{ secrets.TRAFFIC_ACTION_REPO }}
 
     - name: view summary file
       run: cat traffic/summary.csv
