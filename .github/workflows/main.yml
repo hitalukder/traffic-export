@@ -37,8 +37,8 @@ jobs:
     - uses: actions/checkout@v4.1.1
     - run: |
           git config user.name github-actions
-          git config user.email github-actions@github.com
-          git add traffic/*
+          git config user.email htalukder@ibm.com
+          git add .
           git commit -m "generated"
           git push
       
