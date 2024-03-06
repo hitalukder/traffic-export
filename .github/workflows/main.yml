@@ -44,13 +44,4 @@ jobs:
     - name: Commit and push changes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: "Update CSV with new data"
-
-    - uses: actions/checkout@v4.1.1
-    - run: |
-          git config user.name github-actions
-          git config user.email htalukder@ibm.com
-          git add .
-          git commit -m "generated"
-          git push
-  
+        commit_message: "Update CSV with new data from github action"
