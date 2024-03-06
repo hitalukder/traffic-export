@@ -1,6 +1,6 @@
 on:
  schedule:
-   - cron: "*/10 * * * *"
+   - cron: "*/60 * * * *"
     
 jobs:
   # This workflow contains a single job called "traffic"
