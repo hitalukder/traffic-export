@@ -11,6 +11,10 @@ jobs:
       TRAFFIC_ACTION_TOKEN: ${{ secrets.TRAFFIC_ACTION_TOKEN }}
       TRAFFIC_ACTION_OWNER: ${{ secrets.TRAFFIC_ACTION_OWNER }}
       TRAFFIC_ACTION_REPO: ${{ secrets.TRAFFIC_ACTION_REPO }}
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the
+      # added or changed files to the repository.
+      contents: write
       
     steps:
     - name: Checkout current repo
