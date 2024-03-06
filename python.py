@@ -4,9 +4,9 @@ import requests
 from datetime import date
 
 ### setup env variables
-GITHUB_PAT = os.getenv("GITHUB_PAT")
-GITHUB_OWNER = os.getenv("GITHUB_OWNER")
-GITHUB_REPO = os.environ["GITHUB_REPO"]
+GITHUB_PAT = os.getenv("TRAFFIC_ACTION_TOKEN")
+GITHUB_OWNER = os.getenv("TRAFFIC_ACTION_OWNER")
+GITHUB_REPO = os.environ["TRAFFIC_ACTION_REPO"]
 
 # output directory
 output_dir = "traffic"
